@@ -1,0 +1,23 @@
+.login{
+    background: #EDF0F2;
+    min-height: 100vh;
+}
+
+.inputField:hover,
+.inputField:focus {
+  box-shadow: none;
+  outline: none;
+}
+.passwordField{
+    position: relative;
+    width:100%;
+}
+.passwordIconDiv{
+    position: absolute;
+    right: 15px;
+    top: 6px;
+}
+.passwordIcon{
+    font-size: 18px;
+    cursor: pointer;
+}
