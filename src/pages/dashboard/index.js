@@ -26,7 +26,8 @@ export default function Dashboard() {
             <div className={`${Style.content} px-4`}>
               <Row className="mb-4 mt-4">
                 <Col md={10} sm={12}>
-                  <div className="d-flex justify-content-between">
+                  <div className={Style.contentContainer}>
+                  <div className={`d-flex justify-content-between`}>
                     <div>
                       <h5>Meal Chart</h5>
                     </div>
@@ -34,6 +35,7 @@ export default function Dashboard() {
                       <h5>Nov-2023</h5>
                     </div>
                   </div>
+
                   <p>
                     All meal can be turned on at once when Paid your payment. If
                     you don&apos;t pay, you turn the meal OFF OR ON by clicking
@@ -44,7 +46,7 @@ export default function Dashboard() {
                   </p>
 
                   {/* Payment Table */}
-                  <div className="table-responsive">
+                  <div className={`table-responsive`}>
                     <Table striped bordered hover>
                       <thead>
                         <tr>
@@ -63,6 +65,7 @@ export default function Dashboard() {
                         </tr>
                       </tbody>
                     </Table>
+                  </div>
                   </div>
                 </Col>
               </Row>

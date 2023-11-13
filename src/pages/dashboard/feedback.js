@@ -36,17 +36,19 @@ export default function Payment() {
 
             {/* Main Content */}
             <div className={`${Style.content} px-4`}>
-              <TopTitle title="Feedback Message" textAlign="left" />
+              
               <Row>
                 <div className="d-flex mb-5 mt-0" style={{ width: "100%" }}>
                   <Col lg={5} md={7} sm={7}>
                     <div
                       style={{
                         background: "#fff",
-                        padding: "50px 50px",
+                        padding: "25px 50px",
                         borderRadius: "20px",
+                        marginTop: '40px'
                       }}
                     >
+                      <TopTitle title="Feedback Message" textAlign="left" />
                       {/* Form header and login Form data */}
                       {/* Title */}
                       <Form>
@@ -58,8 +60,8 @@ export default function Payment() {
                             <Form.Control
                               type="text"
                               className={`${Style.inputField} remove-focus`}
-                              {...register("oldPassword", { required: true })}
-                              placeholder="Old Password"
+                              {...register("subject", { required: true })}
+                              placeholder="Enter your subject"
                             />
                           </div>
                         </Form.Group>

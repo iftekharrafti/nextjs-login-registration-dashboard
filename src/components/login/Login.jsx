@@ -46,12 +46,8 @@ export default function Login() {
               style={{ width: "100%" }}
             >
               <Col lg={4} md={7} sm={7}>
-                <div
-                  style={{
-                    background: "#fff",
-                    padding: "50px 50px",
-                    borderRadius: "20px",
-                  }}
+                <div className={Style.loginContainer}
+                  
                 >
                   {/* Form header and login Form data */}
                   {/* Title */}
