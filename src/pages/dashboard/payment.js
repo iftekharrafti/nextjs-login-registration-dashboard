@@ -30,6 +30,7 @@ export default function Payment() {
             <div className={`${Style.content} px-4`}>
               <Row className="mb-4 mt-4">
                 <Col md={10} sm={12}>
+                <div className={Style.contentContainer}>
                   <TopTitle
                     title="Payment Details"
                     style={{ textAlign: "left" }}
@@ -72,6 +73,7 @@ export default function Payment() {
                         </tr>
                       </tbody>
                     </Table>
+                  </div>
                   </div>
                 </Col>
               </Row>

@@ -9,7 +9,6 @@ import axios from "axios";
 import { BASE_URL } from "@/utils/api";
 import { toast } from "react-toastify";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Application() {
   const [selectedOption, setSelectedOption] = useState("");
@@ -44,6 +43,7 @@ export default function Application() {
           <Container className="mt-4 mb-5">
             <Row>
               <Col lg={8} md={10} sm={12} className="mx-auto">
+              <div className={Style.application}>
                 <Form onSubmit={handleSubmit(onSubmit)}>
                   <div className={Style.contactInstitute}>
                     <Form.Group
@@ -51,7 +51,7 @@ export default function Application() {
                       controlId="exampleForm.ControlInput1"
                     >
                       <Form.Label className={Style.inputLabel}>Student Name</Form.Label>
-                      <Form.Control
+                      <Form.Control size="sm"
                         type="text"
                         className={Style.inputField}
                         {...register("name", { required: true })}
@@ -68,7 +68,7 @@ export default function Application() {
                       <Form.Label className={Style.inputLabel}>
                       DU Registration No
                       </Form.Label>
-                      <Form.Control
+                      <Form.Control size="sm"
                         type="text"
                         className={Style.inputField}
                         {...register("registration", { required: true })}
@@ -89,7 +89,7 @@ export default function Application() {
                       <Form.Label className={Style.inputLabel}>
                         Phone Number
                       </Form.Label>
-                      <Form.Control
+                      <Form.Control size="sm"
                         type="text"
                         className={`${Style.inputField} input`}
                         {...register("phone", { required: true })}
@@ -106,7 +106,7 @@ export default function Application() {
                       <Form.Label className={Style.inputLabel}>
                         E-mail (DU Institutional)
                       </Form.Label>
-                      <Form.Control
+                      <Form.Control size="sm"
                         type="email"
                         className={Style.inputField}
                         {...register("email", { required: true })}
@@ -127,7 +127,7 @@ export default function Application() {
                       <Form.Label className={Style.inputLabel}>
                       Re-Type E-mail
                       </Form.Label>
-                      <Form.Control
+                      <Form.Control size="sm"
                         type="email"
                         className={`${Style.inputField} input`}
                         {...register("retype_email", { required: true })}
@@ -146,7 +146,7 @@ export default function Application() {
                       <Form.Label className={Style.inputLabel}>
                         Password
                       </Form.Label>
-                      <Form.Control
+                      <Form.Control size="sm"
                         type="password"
                         className={`${Style.inputField} ${Style.inputNumber}`}
                         {...register("password", { required: true })}
@@ -165,7 +165,7 @@ export default function Application() {
                       <Form.Label className={Style.inputLabel}>
                         Confirm Password
                       </Form.Label>
-                      <Form.Control
+                      <Form.Control size="sm"
                         type="password"
                         className={`${Style.inputField} input`}
                         {...register("confirmPassword", { required: true })}
@@ -182,7 +182,7 @@ export default function Application() {
                       <Form.Label className={Style.inputLabel}>
                         Select Profile Image(300*300px)
                       </Form.Label>
-                      <Form.Control
+                      <Form.Control size="sm"
                         type="file"
                         className={`${Style.inputField} input`}
                         {...register("file", { required: true })}
@@ -212,6 +212,7 @@ export default function Application() {
                   }
                   
                 </Form>
+                </div>
               </Col>
             </Row>
           </Container>

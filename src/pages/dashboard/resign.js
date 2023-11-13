@@ -31,6 +31,7 @@ export default function Resign() {
             <div className={`${Style.content} px-4`}>
               <Row className="mb-4 mt-4">
                 <Col md={10} sm={12}>
+                <div className={Style.contentContainer}>
                   <div className="d-flex justify-content-between">
                     <div>
                       <p>Member Resign Application</p>
@@ -64,6 +65,7 @@ export default function Resign() {
                         </tr>
                       </tbody>
                     </Table>
+                  </div>
                   </div>
                 </Col>
               </Row>
